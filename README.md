@@ -1,175 +1,407 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Nile Money Transfer System (NMTS)</title>
-  <style>
-    body {
-      font-family: "Segoe UI", Roboto, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f9fafb;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(135deg, #0f172a, #1e3a8a);
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 0.5rem;
-      margin-top: 2rem;
-      color: #1e3a8a;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      background: #fff;
-      margin: 0.5rem 0;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    code, pre {
-      background: #f3f4f6;
-      padding: 0.2rem 0.4rem;
-      border-radius: 4px;
-      font-family: Consolas, monospace;
-    }
-    pre {
-      padding: 1rem;
-      overflow-x: auto;
-    }
-    .card {
-      background: #fff;
-      border-radius: 8px;
-      padding: 1.5rem;
-      margin: 1rem 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    }
-    footer {
-      background: #1e293b;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>🌍 Nile Money Transfer System (NMTS)</h1>
-    <p>A secure, resilient regional remittance platform</p>
-  </header>
+<div align="center">
 
-  <section>
-    <h2>🌟 Key Capabilities</h2>
-    <div class="card">
-      <h3>Strict Data Isolation & Security Hierarchy</h3>
-      <ul>
-        <li><strong>Owner (Corporate Admin):</strong> Full master access to system state, branches, safes, and logs.</li>
-        <li><strong>Auditor:</strong> Read-only compliance access to logs and transactions.</li>
-        <li><strong>Branch Manager:</strong> Limited to their branch’s transactions, rosters, and safes.</li>
-        <li><strong>Frontline Agent:</strong> Restricted to their own transactions and payouts.</li>
-      </ul>
-    </div>
+# 🏦 Nile Money Transfer System (NMTS)
 
-    <div class="card">
-      <h3>Remittance Lifecycle Management</h3>
-      <ul>
-        <li><strong>Send Money:</strong> Secure sender/receiver profiles, PIN codes, and ledger registration.</li>
-        <li><strong>Validate & Payout:</strong> Real-time verification and cash disbursement.</li>
-        <li><strong>Cancel & Reverse:</strong> Privileged reversal with refund calculations.</li>
-      </ul>
-    </div>
+<p>
+  <b>Secure • Resilient • Offline-First Regional Remittance Platform</b>
+</p>
 
-    <div class="card">
-      <h3>Treasury Management & Cash Vault Safes</h3>
-      <p>Continuous tracking of branch reserves with live safe tally monitoring.</p>
-    </div>
+<p>
+  <img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/TypeScript-5.x-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Express.js-Backend-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Docker-Production_Ready-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/AI-Gemini-orange?style=for-the-badge" />
+</p>
 
-    <div class="card">
-      <h3>Inter-Branch Netting & Settlements</h3>
-      <p>Automated netting requests with multi-step approval and settlement cycles.</p>
-    </div>
+<p>
+  High-performance money transfer infrastructure designed for secure branch operations,
+  treasury management, inter-branch settlements, compliance auditing, and AI-powered
+  financial intelligence.
+</p>
 
-    <div class="card">
-      <h3>Offline-First Synchronization</h3>
-      <p>Agents can transact offline with automatic sync upon network restoration.</p>
-    </div>
+</div>
 
-    <div class="card">
-      <h3>Phase 2 AI Core</h3>
-      <p>Integrated Gemini SDK for anomaly detection, liquidity projections, and BI reporting.</p>
-    </div>
-  </section>
+---
 
-  <section>
-    <h2>🛠️ Technology Stack</h2>
-    <ul>
-      <li><strong>Frontend:</strong> React 18, Vite, TypeScript, Tailwind CSS, Lucide Icons, Recharts, Motion</li>
-      <li><strong>Backend:</strong> Express, TypeScript, JSON persistence</li>
-      <li><strong>Docker:</strong> Multi-stage alpine builds, non-root execution</li>
-    </ul>
-  </section>
+## 📖 Overview
 
-  <section>
-    <h2>📦 Containerization & Docker Setup</h2>
-    <pre><code>docker build -t nile-money-transfer .
-docker run -d -p 3000:3000 --name nile-app nile-money-transfer</code></pre>
-    <p>Open <a href="http://localhost:3000">http://localhost:3000</a> to verify execution.</p>
-  </section>
+<table>
+<tr>
+<td width="50%">
 
-  <section>
-    <h2>🚀 Local Development Setup</h2>
-    <pre><code>npm install
+### 🎯 Mission
+
+Provide a secure and scalable regional remittance platform that enables:
+
+* Money transfers
+* Cash payouts
+* Treasury monitoring
+* Branch reconciliation
+* Compliance auditing
+* AI-powered anomaly detection
+
+</td>
+
+<td width="50%">
+
+### ⚡ Highlights
+
+✅ Role-Based Access Control
+
+✅ Offline-First Operations
+
+✅ Multi-Branch Settlement Engine
+
+✅ Safe Ledger Tracking
+
+✅ AI Operational Intelligence
+
+✅ Docker Ready
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🌟 Key Capabilities
+
+### 🔐 1. Strict Data Isolation & Security Hierarchy
+
+<table>
+<tr>
+<th>Role</th>
+<th>Access Level</th>
+</tr>
+
+<tr>
+<td><b>Owner</b></td>
+<td>Complete control over branches, personnel, safes, settlements, logs, and system configuration.</td>
+</tr>
+
+<tr>
+<td><b>Auditor</b></td>
+<td>Read-only visibility across all transactions, logs, reports, and compliance data.</td>
+</tr>
+
+<tr>
+<td><b>Branch Manager</b></td>
+<td>Controls branch operations, personnel, safes, and settlement workflows.</td>
+</tr>
+
+<tr>
+<td><b>Agent</b></td>
+<td>Restricted to personal transactions, payouts, and assigned cash drawer.</td>
+</tr>
+
+</table>
+
+---
+
+### 💸 2. Remittance Lifecycle Management
+
+<div>
+
+#### Send Money
+
+* Sender & receiver registration
+* Destination branch routing
+* Multi-currency support (SSP/USD)
+* Fee calculation
+* Secure PIN generation
+
+#### Validate & Payout
+
+* Ticket verification
+* PIN validation
+* Branch confirmation
+* Secure cash disbursement
+
+#### Cancel & Reverse
+
+* Manager approval workflow
+* Automated refund calculations
+* Safe liability release
+
+</div>
+
+---
+
+### 🏦 3. Treasury Management & Safe Tracking
+
+<table>
+<tr>
+<td>
+
+✔ Real-time safe balances
+
+✔ CASH_IN ledgers
+
+✔ CASH_OUT ledgers
+
+✔ Branch liquidity monitoring
+
+✔ Automatic closing balances
+
+</td>
+</tr>
+</table>
+
+---
+
+### 🔄 4. Inter-Branch Netting & Settlement
+
+```text
+CREATED
+    │
+    ▼
+APPROVED / REJECTED
+    │
+    ▼
+SETTLED
+```
+
+#### Settlement Automation
+
+| Action                | Ledger Impact   |
+| --------------------- | --------------- |
+| Payer Branch          | CASH_OUT        |
+| Receiver Branch       | CASH_IN         |
+| Settlement Completion | Vault Alignment |
+
+---
+
+### 🌐 5. Offline-First Synchronization
+
+> Designed for unreliable network environments.
+
+Features:
+
+* Local action queue
+* Automatic synchronization
+* Conflict resolution
+* Transaction persistence
+* Network recovery handling
+
+---
+
+### 🤖 6. AI Intelligence Core
+
+Powered by Gemini SDK.
+
+#### Capabilities
+
+| Feature               | Description                    |
+| --------------------- | ------------------------------ |
+| Anomaly Detection     | Detect suspicious transactions |
+| Liquidity Forecasting | Predict cash shortages         |
+| Operational BI        | Real-time insights             |
+| Compliance Alerts     | Identify irregular activity    |
+
+---
+
+# 🛠 Technology Stack
+
+<table>
+
+<tr>
+<th>Layer</th>
+<th>Technology</th>
+</tr>
+
+<tr>
+<td>Frontend</td>
+<td>React 18, Vite, TypeScript, Tailwind CSS, Recharts</td>
+</tr>
+
+<tr>
+<td>Backend</td>
+<td>Express, TypeScript, ESBuild</td>
+</tr>
+
+<tr>
+<td>Persistence</td>
+<td>server-db.json</td>
+</tr>
+
+<tr>
+<td>AI</td>
+<td>Google Gemini SDK</td>
+</tr>
+
+<tr>
+<td>Containerization</td>
+<td>Docker Multi-Stage Builds</td>
+</tr>
+
+</table>
+
+---
+
+# 📦 Docker Deployment
+
+<details>
+<summary><b>View Docker Instructions</b></summary>
+
+### Build
+
+```bash
+docker build -t nile-money-transfer .
+```
+
+### Run
+
+```bash
+docker run -d -p 3000:3000 \
+--name nile-app \
+nile-money-transfer
+```
+
+### Verify
+
+Open:
+
+```text
+http://localhost:3000
+```
+
+</details>
+
+---
+
+# 🚀 Local Development
+
+### Installation
+
+```bash
+npm install
+```
+
+### Environment Variables
+
+```env
+PORT=3000
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+### Development
+
+```bash
 npm run dev
+```
+
+### Production Build
+
+```bash
 npm run build
-npm start</code></pre>
-  </section>
+```
 
-  <section>
-    <h2>📁 Core Directory Structure</h2>
-    <pre><code>├── Dockerfile
-├── server.ts
-├── server-db.json
-├── src/
-│   ├── main.tsx
-│   ├── App.tsx
-│   └── components/
-│       ├── LoginScreen.tsx
-│       ├── PersonaHub.tsx
-│       ├── SendMoneyForm.tsx
-│       ├── ReceiveMoneyForm.tsx
-│       ├── RemittanceList.tsx
-│       ├── SettlementsModule.tsx
-│       ├── ExecutiveDashboard.tsx
-│       ├── ReportingModule.tsx
-│       ├── AIIntelligenceCore.tsx
-│       └── OfflineSyncPanel.tsx</code></pre>
-  </section>
+### Start Production
 
-  <section>
-    <h2>🔒 Security & Data Isolation</h2>
-    <p>Requests are filtered by role-based context headers. Unauthorized operations return <code>403 Forbidden</code>.</p>
-  </section>
+```bash
+npm start
+```
 
-  <footer>
-    <p>📝 Nile Money Transfer System — Secure regional financial transactions under Central Bank compliance.</p>
-  </footer>
-</body>
-</html>
+---
+
+# 📁 Project Structure
+
+```text
+src/
+├── App.tsx
+├── main.tsx
+├── types.ts
+├── utils.ts
+│
+└── components/
+    ├── LoginScreen.tsx
+    ├── PersonaHub.tsx
+    ├── SendMoneyForm.tsx
+    ├── ReceiveMoneyForm.tsx
+    ├── RemittanceList.tsx
+    ├── SettlementsModule.tsx
+    ├── ExecutiveDashboard.tsx
+    ├── ReportingModule.tsx
+    ├── AIIntelligenceCore.tsx
+    └── OfflineSyncPanel.tsx
+```
+
+---
+
+# 🔒 Security Architecture
+
+<div>
+
+### Request Context Security
+
+Every request carries:
+
+```http
+x-employee-id
+```
+
+### Access Enforcement
+
+* Dynamic response filtering
+* Branch-level isolation
+* Role-based authorization
+* Settlement approval restrictions
+* Secure 403 rejection handling
+
+</div>
+
+---
+
+# 📊 Operational Workflow
+
+```text
+Customer
+    │
+    ▼
+Send Money
+    │
+    ▼
+Secure Ledger
+    │
+    ▼
+Destination Branch
+    │
+    ▼
+PIN Validation
+    │
+    ▼
+Cash Payout
+```
+
+---
+
+# 📝 License & Compliance
+
+<div align="center">
+
+**Nile Money Transfer System**
+
+Secure regional remittance infrastructure designed for regulated financial environments.
+
+All transactions are:
+
+✅ Logged
+
+✅ Audited
+
+✅ Traceable
+
+✅ Settlement Verified
+
+✅ Compliance Ready
+
+</div>
+
+---
+
+<div align="center">
+
+### 🚀 Built for Secure Regional Financial Operations
+
+</div>
