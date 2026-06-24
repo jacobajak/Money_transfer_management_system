@@ -1,0 +1,8 @@
+{
+  "name": "South Sudan Money Transfer Management System",
+  "description": "Digital platform for money transfer businesses in South Sudan, managing branches, employees, cash ledgers, settlements, and offline-first synchronization with real-time AI fraud detection, business insights, and cash forecasting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
